@@ -1,0 +1,27 @@
+class Triangle:
+    def __init__(self, a, b, c):
+        self.a = a
+        self.b = b
+        self.c = c
+    
+    def validate_triangle(self):
+        if (self.a + self.b > self.c) and (self.b + self.c > self.a) and (self.a + self.c > self.b):
+            print("Valid")
+        else:
+            print("Invalid")
+
+class Rectangle:
+    def __init__(self, l, b):
+        self.l = l
+        self.b = b
+    
+    def validate_rectangle(self):
+        if self.l == self.b:
+            print("Valid Rectangle")
+        else:
+            print("Invalid Rectangle")
+t = Triangle(3, 4, 5)
+t.validate_triangle() 
+
+r = Rectangle(24, 2)
+r.validate_rectangle()
